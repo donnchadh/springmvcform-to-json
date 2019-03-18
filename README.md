@@ -1,8 +1,6 @@
 # springmvcform-to-json
 
-<p align="center">
-    <a href="https://circleci.com/gh/donnchadh/springmvcform-to-json/tree/master">
-        <img src="https://img.shields.io/circleci/project/github/donnchadh/springmvcform-to-json.svg" alt="build status"></a>
-</p>
+[![Build Status](https://circleci.com/gh/donnchadh/springmvcform-to-json.svg?style=svg)](https://circleci.com/gh/donnchadh/springmvcform-to-json)
+[![Code Coverage](https://codecov.io/gh/donnchadh/springmvcform-to-json/branch/master/graph/badge.svg)](https://codecov.io/gh/donnchadh/springmvcform-to-json)
 
 Convert Spring-MVC form fields to JSON representation
