@@ -31,6 +31,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.11",
     "jest": "^24.5.0",
+    "jest-junit": "^6.3.0",
     "nyc": "^13.3.0",
     "prettier": "^1.16.4",
     "ts-jest": "^24.0.0",
@@ -40,5 +41,9 @@
   },
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "jest-junit": {
+    "outputDirectory": "test-results/jest",
+    "outputName": "./results.xml"
+  }
 }
