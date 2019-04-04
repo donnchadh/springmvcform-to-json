@@ -1,6 +1,6 @@
 {
   "name": "springmvcform-to-json",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Convert Spring-MVC form fields to JSON representation",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
