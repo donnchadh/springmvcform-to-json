@@ -96,7 +96,13 @@ function nameValuePairToPathValue(nameValuePair: INameValuePair): IPathValue {
   return { path: fieldNameToPathSegments(nameValuePair.name), value: nameValuePair.value };
 }
 
-export function serializeFormData(formData: INameValuePair[]): string {
-  const obj = formDataToObject(formData.map(nameValuePairToPathValue));
+export function serializeFormDataArray(formDataArray: INameValuePair[]): string {
+  const obj = formDataToObject(formDataArray.map(nameValuePairToPathValue));
   return JSON.stringify(obj);
+}
+
+export function serializeFormData(formData: FormData): string {
+  const formDataArray: INameValuePair[] = [];
+  formData.forEach((value, key) => formDataArray.push({name: key, value: value.toString()}));
+  return serializeFormDataArray(formDataArray);
 }
